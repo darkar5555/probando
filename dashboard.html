@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dog.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand ">
+                    <a class="" href="#"><img src="small_logo.png" alt=""> <strong>Dekoding</strong> </a>
+                </li>
+                <hr>
+                <li class="active">
+                    <a class="color" href="dashboard.html"><img src="list_icon.png" alt=""><strong>Dog List</strong> </a>
+                </li>
+                <li>
+                    <a class="color" href="addDog.html"><img src="add_icon.png" alt=""> <strong>Add Dog</strong> </a>
+                </li>
+                <li>
+                    <a class="color" href=""><img src="list_icon.png" alt=""><strong> Owner List</strong></a>
+                </li>
+                <li>
+                    <a class="color" href=""><img src="add_icon.png" alt=""><strong> Add List</strong></a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card mb-3" style="width: 100%;">
+                        <div class="card-header">Dog List</div>
+                        <div class="card-body">
+                            <table class="table" >
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Age</th>
+                                        <th scope="col">Breed</th>
+                                        <th scope="col">Owner</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lasi</td>
+                                        <td>3</td>
+                                        <td>German shesherd</td>
+                                        <td>Renato Suarez</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doggo</td>
+                                        <td>2</td>
+                                        <td>Argentine Dogo</td>
+                                        <td>Angelina Medina</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Servero</td>
+                                        <td>5</td>
+                                        <td>Doberman</td>
+                                        <td>Sara Velarde</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>
